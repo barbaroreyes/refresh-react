@@ -1,12 +1,18 @@
-import Todo from './compo/Todos '
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-    <h1>All</h1>
+    <div >
+    <h1>My Todos</h1>
   
-    <Todo text='Hello'/>
+    <div className="card">
+     <h2>Title</h2>
+     <div className="actions">
+     <button className="btn">delete</button>
+     </div>
+     </div>
+    
     </div>
   );
 }
