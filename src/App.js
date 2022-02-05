@@ -1,12 +1,14 @@
 
 import './App.css';
-import AllTodos from './compo/AllTodos';
+import Todo from './compo/Todo';
 function App() {
   return (
     <div >
     <h1>My Todos</h1>
-  
-    <AllTodos/>
+     <Todo text="Learb React"/>
+     <Todo text="Check Al info"/>
+     <Todo text="Graduate"/>
+
     
     </div>
   );
