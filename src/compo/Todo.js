@@ -6,6 +6,9 @@ const [modalIsOpen ,setModalIsOpen] = useState(false)
   const handleDelete = () => {
     setModalIsOpen(true)
   }
+  const closeHandleDelete = () => {
+    setModalIsOpen(false)
+  }
   return (
     <div className="card">
      <h2>{text}</h2>
@@ -13,7 +16,7 @@ const [modalIsOpen ,setModalIsOpen] = useState(false)
      <button className="btn" onClick = {handleDelete}>delete</button>
      </div>
      {modalIsOpen && <Modal/>}
-     {modalIsOpen && <Backdrop/>}
+     {modalIsOpen && <Backdrop onCancel = {closeHandleDelete}/>}
      
      </div>
   
