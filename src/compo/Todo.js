@@ -2,13 +2,13 @@ import React from 'react';
 
 const Todos  = ({text}) => {
   return (
-    <div className="container">
-     <div className="card">
-     <p>{text}</p>
-      <button className="btn">delete</button>
+    <div className="card">
+     <h2>Title</h2>
+     <div className="actions">
+     <button className="btn">delete</button>
      </div>
-    
-    </div>
+     </div>
+  
   );
 }
 
