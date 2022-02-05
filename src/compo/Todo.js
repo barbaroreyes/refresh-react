@@ -15,7 +15,7 @@ const [modalIsOpen ,setModalIsOpen] = useState(false)
      <div className="actions">
      <button className="btn" onClick = {handleDelete}>delete</button>
      </div>
-     {modalIsOpen && <Modal/>}
+     {modalIsOpen && <Modal onCancel={closeHandleDelete} onConfirm={closeHandleDelete}/>}
      {modalIsOpen && <Backdrop onCancel = {closeHandleDelete}/>}
      
      </div>
