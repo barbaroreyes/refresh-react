@@ -1,8 +1,10 @@
-import React from 'react';
-
+import React , {useState } from 'react';
+import Modal from './Modal';
+import Backdrop from './Backdrop';
 const Todos  = ({text}) => {
+const [modalIsOpen ,setModalIsOpen] = useState(false)
   const handleDelete = () => {
-    console.log(text)
+    setModalIsOpen(true)
   }
   return (
     <div className="card">
@@ -10,6 +12,9 @@ const Todos  = ({text}) => {
      <div className="actions">
      <button className="btn" onClick = {handleDelete}>delete</button>
      </div>
+     {modalIsOpen && <Modal/>}
+     {modalIsOpen && <Backdrop/>}
+     
      </div>
   
   );

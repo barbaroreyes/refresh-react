@@ -1,6 +1,7 @@
 
 import './App.css';
 import Todo from './compo/Todo';
+
 function App() {
   return (
     <div >
@@ -8,6 +9,7 @@ function App() {
      <Todo text="Learb React"/>
      <Todo text="Check Al info"/>
      <Todo text="Graduate"/>
+    
 
     
     </div>
